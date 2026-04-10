@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="main-header">
+    <h1>Daniel Adolfo</h1>
+    <p>Desenvolvedor Full Stack | Java & Spring Boot</p>
+</header>
+
+<main class="container">
+    <section class="admin-panel">
+        <div class="formulario">
+            <h3> Novo Projeto</h3>
+            <div class="form-group">
+                <label for="titulo">Projeto</label>
+                <input type="text" id="titulo" placeholder="Ex: Sistema de Cadastro">
+
+                <label for="tecnologia">Tecnologias</label>
+                <input type="text" id="tecnologia" placeholder="Ex: Java & Spring">
+
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" rows="3" placeholder="Conte um pouco sobre o projeto..."></textarea>
+
+                <label for="linkGithub">Link do Repositorio</label>
+                <input type="text" id="linkGithub" placeholder="https://github.com/...">
+
+                <button onclick="salvarProjeto()" class="btn-save">Salvar projeto</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="lista-projetos" class="projects-grid">
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

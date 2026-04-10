@@ -1,0 +1,161 @@
+:root {
+    --primary: #6e57e0;
+    --bg: #0b0e14;
+    --card-bg: #151921;
+    --text: #ecf0f1;
+    --text-dim: #bdc3c7;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1a1e29 0%, #0b0e14 100%);
+    border-bottom: 1px solid #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.projects-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+
+.project-card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #2c3e50;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+
+
+    flex: 1 1 300px;
+    max-width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: var(--primary);
+}
+
+.project-card p {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.btn-delete {
+    background: transparent;
+    color: #7FFFD4;
+    border: 1px solid #e74c3c;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-top: 15px;
+}
+
+.btn-delete:hover {
+    background: #e74c3c;
+    color: white;
+}ight: bold; }
+
+
+.admin-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.formulario {
+    background-color: #ffffff;
+    color: #333;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border-top: 15px solid var(--primary);
+}
+
+.formulario h3 {
+    margin-top: 0;
+    text-align: center;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: -10px;
+}
+
+.form-group input, .form-group textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 5px rgba(110, 87, 224, 0.3);
+}
+
+.btn-save {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.btn-save:hover {
+    background-color: #5a46c7;
+}
