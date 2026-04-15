@@ -21,7 +21,6 @@ async function carregarProjetos() {
     }
 }
 
-//  salvar um novo projeto
 async function salvarProjeto() {
     const projeto = {
         titulo: document.getElementById('titulo').value,
@@ -46,7 +45,6 @@ async function salvarProjeto() {
     }
 }
 
-//  deletar projeto
 async function deletarProjeto(id) {
     if (confirm("Deseja excluir?")) {
         await fetch(`http://localhost:8081/api/projetos/${id}`, { method: 'DELETE' });
@@ -56,3 +54,17 @@ async function deletarProjeto(id) {
 
 
 carregarProjetos();
+
+function toggleAdmin() {
+    const admin = document.querySelector('.admin-area');
+    admin.style.display = (admin.style.display === 'none') ? 'block' : 'none';
+}
+
+function toggleAdmin() {
+    const admin = document.getElementById('admin-area');
+    if (admin.style.display === 'flex') {
+        admin.style.display = 'none';
+    } else {
+        admin.style.display = 'flex';
+    }
+}

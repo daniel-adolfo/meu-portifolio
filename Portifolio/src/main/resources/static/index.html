@@ -5,12 +5,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="main-header">
-    <h1>Daniel Adolfo</h1>
-    <p>Desenvolvedor Full Stack | Java & Spring Boot</p>
+
+<nav class="navbar">
+    <div class="logo">Daniel<span>.Dev</span></div>
+    <ul class="nav-links">
+        <li><a href="#inicio">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><button onclick="toggleAdmin()" class="btn-admin">⚙️</button></li>
+    </ul>
+</nav>
+
+<header id="inicio" class="hero">
+    <div class="hero-content">
+        <h1>Ola, eu sou o <span class="highlight">Daniel Adolfo</span></h1>
+        <p>Desenvolvedor Full Stack.</p>
+        <div class="hero-btns">
+            <a href="#projetos" class="btn-primary">Ver Projetos</a>
+            <a href="#contato" class="btn-secondary">Contato</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <div class="img-placeholder"></div>
+    </div>
 </header>
 
+<div id="admin-area" class="admin-overlay">
+    <div class="prancheta">
+        <button onclick="toggleAdmin()" class="btn-close">X</button>
+    </div>
+</div>
 <main class="container">
+    <div class="admin-area">
     <section class="admin-panel">
         <div class="formulario">
             <h3> Novo Projeto</h3>
@@ -31,7 +59,7 @@
             </div>
         </div>
     </section>
-
+    </div>
 
     <section id="lista-projetos" class="projects-grid">
     </section>
