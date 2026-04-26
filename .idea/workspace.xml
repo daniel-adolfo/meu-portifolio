@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825bacff-ac8b-42c9-a410-ebfb46a2f5c8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Portifolio/src/main/resources/static/img/OIP.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Portifolio/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portifolio/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portifolio/src/main/resources/static/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Portifolio/src/main/resources/static/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Portifolio/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Portifolio/src/main/resources/static/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +43,10 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RunManager">

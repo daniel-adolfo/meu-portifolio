@@ -202,16 +202,26 @@ html { scroll-behavior: smooth; }
 
 
 .hero {
-    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10%;
-    background: radial-gradient(circle at top right, #1a1e29, #0b0e14);
+    height: 100vh;
+
 }
 
 .hero-content {
-    flex: 1;
+    display: flex;
+    background: red;
+    width: 50%;
+    height 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .highlight { color: #6e57e0; }
