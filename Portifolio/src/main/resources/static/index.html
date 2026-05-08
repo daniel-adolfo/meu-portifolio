@@ -18,26 +18,43 @@
     </ul>
 </nav>
 
-<header class="hero">
-    <div class="hero-content">
-        <img src="img/OIP.jpeg" alt="Descrição da imagem">
-        <h1>Ola, eu sou o <span class="highlight">Daniel Adolfo</span></h1>
-        <p>Desenvolvedor Full Stack.</p>
-        <h2>Transformando ideias em código com Java, Spring Boot e React. Atualmente focado em criar soluções robustas e escaláveis</h2>
-        <div class="hero-btns">
-            <a href="#projetos" class="btn-primary">Ver Projetos</a>
-            <a href="#contato" class="btn-secondary">Contato</a>
-        </div>
-    </div>
-    <div class="hero-image">
-        <div class="img-placeholder"></div>
-    </div>
-    <div class="hero-content">
+<!-- Section Pai: Contém o fundo tecnológico e agrupa o conteúdo -->
+<header id="inicio" class="hero-main-container">
 
-    </div>
-    <div class="hero-image">
-        <div class="img-placeholder"></div>
-    </div>
+    <!-- Section Filha Esquerda: Conteúdo de Escrita -->
+    <section class="hero-text-side">
+        <div class="glass-content">
+            <h1>Olá, eu sou o <br><span class="highlight-blue">Daniel Adolfo</span></h1>
+            <p>Desenvolvedor Full Stack especializado em construir soluções robustas e escaláveis com <strong>Java</strong> e <strong>Spring Boot</strong>.</p>
+            <div class="hero-cta">
+                <a href="#projetos" class="btn-main">Meus Projetos</a>
+                <a href="#contato" class="btn-outline">Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Filha Direita: Foto e Ferramentas -->
+    <section class="hero-visual-side">
+        <div class="orbit-wrapper">
+            <!-- Moldura Hexagonal da Foto -->
+            <div class="profile-hexagon">
+                <img src="SUA-FOTO.jpg" alt="Daniel Adolfo">
+            </div>
+
+            <!-- Ícones das Ferramentas em Órbita -->
+            <div class="tech-orbit">
+                <div class="icon-item" style="--i:1"><i class="fab fa-java"></i><span>Java</span></div>
+                <div class="icon-item" style="--i:2"><i class="fab fa-react"></i><span>React</span></div>
+                <div class="icon-item" style="--i:3"><i class="fas fa-database"></i><span>SQL</span></div>
+                <div class="icon-item" style="--i:4"><i class="fab fa-js"></i><span>JS</span></div>
+                <div class="icon-item" style="--i:5"><i class="fab fa-aws"></i><span>AWS</span></div>
+                <div class="icon-item" style="--i:6"><i class="fab fa-docker"></i><span>Docker</span></div>
+                <div class="icon-item" style="--i:7"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                <div class="icon-item" style="--i:8"><i class="fab fa-python"></i><span>Python</span></div>
+            </div>
+        </div>
+    </section>
+
 </header>
 
 <div id="admin-area" class="admin-overlay">

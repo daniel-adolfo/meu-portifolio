@@ -243,3 +243,117 @@ img {
     justify-content: center;
     align-items: center;
 }
+
+/* Section Pai - Fundo e Alinhamento Principal */
+.hero-main-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: white;
+    /* Imagem de fundo tecnológica sutil */
+    background-image: radial-gradient(circle at 80% 20%, #161b2a 0%, #080a10 80%);
+    padding: 0 8%;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* Section Filha Esquerda - Escrita */
+.hero-text-side {
+    flex: 1;
+    z-index: 10;
+}
+
+.hero-text-side h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    line-height: 1.1;
+}
+
+.highlight-blue {
+    color: #00f2fe;
+    text-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
+}
+
+/* Section Filha Direita - Foto e Ferramentas */
+.hero-visual-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Moldura Hexagonal Estilo Imagem */
+.profile-hexagon {
+    width: 250px;
+    height: 280px;
+    background: #00f2fe;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 50px rgba(0, 242, 254, 0.3);
+    z-index: 5;
+}
+
+.profile-hexagon img {
+    width: 95%;
+    height: 95%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    object-fit: cover;
+    background: #080a10;
+}
+
+/* Sistema de Órbita dos Ícones */
+.orbit-wrapper {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-orbit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateOrbit 25s linear infinite;
+}
+
+.icon-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Espaçamento circular dos ícones */
+    margin-top: calc(220px * sin(var(--i) * (360deg / 8)));
+    margin-left: calc(220px * cos(var(--i) * (360deg / 8)));
+    background: #10141d;
+    border: 1px solid #00f2fe;
+    padding: 10px;
+    border-radius: 8px;
+    color: #00f2fe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7rem;
+    transition: 0.3s;
+}
+
+.icon-item i { font-size: 1.5rem; margin-bottom: 4px; }
+
+@keyframes rotateOrbit {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .hero-main-container {
+        flex-direction: column-reverse;
+        padding-top: 120px;
+        text-align: center;
+    }
+    .orbit-wrapper { transform: scale(0.7); }
+}
